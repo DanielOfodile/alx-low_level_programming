@@ -12,10 +12,15 @@ int main(void)
 
 	while (numAsciivalue <= 57)
 	{
-		putchar(numAsciivalue);
-		putchar(',');
-		putchar(' ');
-		++numAsciivalue;
+		if (numAsciivalue != 57)
+		{
+			putchar(numAsciivalue);
+			putchar(',');
+			putchar(' ');
+			++numAsciivalue;
+		}
 	}
 	putchar('\n');
+
+	return (0);
 }
