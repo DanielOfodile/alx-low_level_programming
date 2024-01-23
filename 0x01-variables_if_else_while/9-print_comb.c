@@ -1,26 +1,20 @@
 #include <stdio.h>
 
-/**
- * main - Entry point.
- *
- * Description: prints all possible combinations of single-digit numbers.
- * Return: Always(0) on success.
- */
 int main(void)
 {
-	int numAsciivalue = 48;
+	int n = 0;
 
-	while (numAsciivalue <= 57)
+	while (n < 10)
 	{
-		if (numAsciivalue != 57)
-		{
-			putchar(numAsciivalue);
-			putchar(',');
-			putchar(' ');
-			++numAsciivalue;
-		}
+		putchar('0' + n);
+		if (n == 9)
+			break;
+		putchar(',');
+		putchar(' ');
+		n++;
 	}
+
 	putchar('\n');
 
-	return (0);
+	return(0);
 }

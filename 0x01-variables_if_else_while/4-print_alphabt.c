@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (lowercaseAscii != 101 && lowercaseAscii != 113)
 			putchar(lowercaseAscii);
-			lowercaseAscii++;
+		lowercaseAscii++;
 	}
 	putchar('\n');
 
