@@ -15,11 +15,11 @@ void print_times_table(int n)
 
 	if (n < 0 || n > 15)
 		return;
-	while (row < rows)
+	while (row <= rows)
 	{
 		int column = 0;
 
-		while (column < columns)
+		while (column <= columns)
 		{
 			int product = row * column;
 
@@ -48,7 +48,7 @@ void print_times_table(int n)
 					_putchar(((product % 100) / 10) + '0');
 					_putchar((product % 10) + '0');
 				}
-			if (column < columns - 1)
+			if (column <= columns - 1)
 			{
 				_putchar(',');
 			}
