@@ -2,6 +2,7 @@
 
 /**
  * print_square - prints a square.
+ * @size: square size.
  * Return: void.
  */
 void print_square(int size)
@@ -11,7 +12,7 @@ void print_square(int size)
 	else
 	{
 		int row = 1;
-		
+
 		while (row < size + 1)
 		{
 			int column = 1;
